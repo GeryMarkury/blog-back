@@ -1,5 +1,5 @@
 import express from "express";
-import { getAll, add, getById } from "../controllers/trips/index.js";
+import { getAll, add, getById } from "../controllers/posts/index.js";
 import { postsSchemas } from "../schemas/index.js";
 import { isEmptyBody, isValidId, authenticate } from "../middlewars/index.js";
 import { validateBody } from "../decorators/index.js";

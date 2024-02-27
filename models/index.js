@@ -1,2 +1,2 @@
 export { default as User } from "./user.js";
-export { default as Trip } from "./trip.js";
+export { default as Post } from "./post.js";

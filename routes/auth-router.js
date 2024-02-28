@@ -6,7 +6,7 @@ import { validateBody } from "../decorators/index.js";
 
 const authRouter = express.Router();
 
-authRouter.post("/register", validateBody(usersSchemas.userSignupSchema), signup);
+authRouter.post("/register", signup);
 
 authRouter.post("/login", validateBody(usersSchemas.userSigninSchema), signin);
 

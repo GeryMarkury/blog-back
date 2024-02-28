@@ -14,7 +14,7 @@ const add = async (req, res) => {
 	});
 	await newPost.save();
 
-	const post = await Post.find();
+	const post = await Post.find({ owner: owner });
 	res.status(201).json(post);
 };
 
